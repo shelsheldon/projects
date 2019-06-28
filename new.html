@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Personal Details Form</title>
+    <style>
+        body{
+            background-image: url("learning/images/dj_headphones_installation_122020_2560x1440.jpg");
+        }
+        input[type=text], select {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type=number]{
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type=date]{
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .form{
+            height: 100%;
+            width: 100%;
+            justify-content: center;
+            display: flex;
+        }
+        label{
+            font-family: sans-serif;
+            color: darkgreen;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        h3{
+            font-family: Verdana;
+            font-size: 22px;
+            color: brown;
+        }
+        textarea {
+            width: 100%;
+            height: 150px;
+            padding: 12px 20px;
+            box-sizing: border-box;
+            border: 2px solid #ccc;
+            border-radius: 4px;
+            background-color: #f8f8f8;
+            resize: none;
+        }
+        input[type=submit] {
+            width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type=submit]:hover {
+            background-color: blue;
+        }
+
+        .xyz{
+            width: 40%;
+            background: cyan;
+            padding: 15px;
+
+        }
+    </style>
+</head>
+<body>
+<hr>
+<div class="form">
+    <form action="" method="post" class="xyz">
+        <h3>Personal Details</h3>
+        <label for="">ID Number : </label>
+        <input type="number" name="idNo">
+        <label for="">Full Names : </label>
+        <input type="text" name="fullNames">
+        <label for="">Registration Date : </label>
+        <input type="date" name="regDate">
+        <label for="">Gender : </label>
+        <select name="gender" id="gender">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+        </select>
+        <label for="">Marital Status : </label>
+        <select name="mStatus" id="mStatus">
+            <option value="Single">Single</option>
+            <option value="Married">Married</option>
+            <option value="Divorced">Divorced</option>
+            <option value="Widowed">Widowed</option>
+            <option value="Separated">Separated</option>
+        </select>
+        <label for="">Comments</label>
+        <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+        <input type="submit" value="Submit">
+    </form>
+</div>
+</body>
+</html>
